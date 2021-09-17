@@ -1,2 +1,2 @@
 # web
-Nouf and Ivana building a new website for westem
+Nouf and Ivana and Yeonie building a new website for westem
