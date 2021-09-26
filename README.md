@@ -7,3 +7,7 @@ That is why will be welcoming new team members to our team in Spring 2022 to ens
 
 HTML is the languge the browser uses. Start learning HTML here
 https://www.w3schools.com/html/default.asp 
+
+## list of pages with names
+* About, *index.html*, landing page
+* Events, *pages/events.html* 
