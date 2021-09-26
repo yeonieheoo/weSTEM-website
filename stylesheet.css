@@ -1,0 +1,137 @@
+/*color pallet
+		F7EDE2 beige, 
+		838080 grey, 
+		F28482 pink, 
+		227C9D blue, 
+		84A59D blue/grey, 
+		F7BD60 yellow
+*/
+
+
+		/* Remove the navbar's default margin-bottom and rounded borders */ 
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+		
+		/* Add a gray background color and some padding to the footer */
+		footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: #838080;
+			padding: 10px;
+/*			color: #838080;*/
+		}
+		
+	.carousel-inner img {
+			width: 100%; /* Set width to 100% */
+			margin: auto;
+			min-height:200px;
+		}
+
+
+	/*regular dark nav bar*/
+/*	.navbar navbar-inverse{
+		background-color: #f2f2f2;
+	}
+	.navbar-brand{
+		margin:0;
+		padding: 0;
+	}*/
+	/*regular dark nav bar end, unccoment this and comment the group below to get hte dark nav bar*/
+
+
+	/* Modify the Nav bar color */
+	.navbar-custom {
+	    background-color: #838080;
+	}
+
+
+		/* Modify brand and text color */ 
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+	    color: green;
+		margin:0;
+		padding: 0;
+	}
+	/* Modify the nav bar color */
+
+
+
+
+	/* Hide the carousel text when the screen is less than 600 pixels wide */
+	@media (max-width: 600px) {
+		.carousel-caption {
+			display: none; }
+		}
+	/*css of the logo image*/
+	.logo{
+		height: 40px;
+		padding-right: 7px;
+		padding-left: 10px;
+		padding-top: 8px;
+	}
+
+
+	/*below is the css for the icons */
+	.fa {
+		padding: 0px;
+		font-size: 30px; /*controls the size of the icons*/
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		margin: 10px;
+	}
+
+	.fa:hover {
+		opacity: 0.7;
+		color: #84A59D;
+	}
+
+	.fa-instagram {
+		color: #F7BD60;
+	}
+	.fa-envelope {
+		color: #F7BD60;
+	}
+	.fa-slack {
+		color: #F7BD60 /* second color option: CADBC8*/;
+	}/*end code for the icons */
+
+	/*used to change font to Montserrat*/
+	body {
+		font-family: 'Montserrat', sans-serif;
+	}/*end code use to change font*/
+
+
+	/*used for the team images*/
+	.rounded-circle{
+	border:1px solid;
+	border-radius:70px;	
+	width:100px;
+	height:150px;
+	margin: 10px;
+	}/*used for the team images*/
+
+
+	.space{
+		padding-bottom: 10px;
+	}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+	/*used for the footer*/
+	.footer {
+	  grid-area: footer;
+	  background-color: #F7EDE2;
+	  padding: 10px;
+	  text-align: center;
+	}
+	/*end footer used this link https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid*/ 
