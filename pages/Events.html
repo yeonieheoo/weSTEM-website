@@ -1,12 +1,17 @@
-
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<title>Events</title>
+	<title>template</title>
+	<!-- this is a template for SUBpages -->
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!, 
+		events (events.html) in the pages folder which should be the same folder as all the subpages, 
+		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
 
-
-
-	<!-- bootstrap stuff -->
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
@@ -14,205 +19,73 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 
-
-	<!-- color pallet
-		F7EDE2 beige, 
-		838080 grey, 
-		F28482 pink, 
-		227C9D blue, 
-		84A59D blue/grey, 
-		F7BD60 yellow -->
-
 	<!-- linked needed from the social media icons -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 	<!-- used to import needed files to change the default font -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
-	
 
-	<style>
-		/* Remove the navbar's default margin-bottom and rounded borders */ 
-		.navbar {
-			margin-bottom: 0;
-			border-radius: 0;
-		}
-		
-		/* Add a gray background color and some padding to the footer */
-		footer {
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			background-color: #838080;
-			padding: 10px;
-/*			color: #838080;*/
-		}
-		
-	.carousel-inner img {
-			width: 100%; /* Set width to 100% */
-			margin: auto;
-			min-height:200px;
-		}
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
 
-
-	/*regular dark nav bar*/
-/*	.navbar navbar-inverse{
-		background-color: #f2f2f2;
-	}
-	.navbar-brand{
-		margin:0;
-		padding: 0;
-	}*/
-	/*regular dark nav bar end, unccoment this and comment the group below to get hte dark nav bar*/
-
-
-	/* Modify the Nav bar color */
-	.navbar-custom {
-	    background-color: #838080;
-	}
-
-
-		/* Modify brand and text color */ 
-	.navbar-custom .navbar-brand,
-	.navbar-custom .navbar-text {
-	    color: green;
-		margin:0;
-		padding: 0;
-	}
-	/* Modify the nav bar color */
-
-
-
-
-	/* Hide the carousel text when the screen is less than 600 pixels wide */
-	@media (max-width: 600px) {
-		.carousel-caption {
-			display: none; }
-		}
-	/*css of the logo image*/
-	.logo{
-		height: 40px;
-		padding-right: 7px;
-		padding-left: 10px;
-		padding-top: 8px;
-	}
-
-
-	/*below is the css for the icons */
-	.fa {
-		padding: 0px;
-		font-size: 30px; /*controls the size of the icons*/
-		width: 50px;
-		text-align: center;
-		text-decoration: none;
-		margin: 10px;
-	}
-
-	.fa:hover {
-		opacity: 0.7;
-		color: #84A59D;
-	}
-
-	.fa-instagram {
-		color: #F7BD60;
-	}
-	.fa-envelope {
-		color: #F7BD60;
-	}
-	.fa-slack {
-		color: #F7BD60 /* second color option: CADBC8*/;
-	}/*end code for the icons */
-
-	/*used to change font to Montserrat*/
-	body {
-		font-family: 'Montserrat', sans-serif;
-	}/*end code use to change font*/
-
-
-	/*used for the team images*/
-	.rounded-circle{
-	border:1px solid;
-	border-radius:70px;	
-	width:100px;
-	height:150px;
-	margin: 10px;
-	}/*used for the team images*/
-
-
-	.space{
-		padding-bottom: 10px;
-	}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-	/*used for the footer*/
-	.footer {
-	  grid-area: footer;
-	  background-color: #F7EDE2;
-	  padding: 10px;
-	  text-align: center;
-	}
-	/*end footer used this link https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid*/ 
-
-	</style>
 </head>
 <body>
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
 
-
-
-<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
-
-	<a class='navbar-brand' href='#'>
-		<a class='navbar-brand' href='#'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
 		</a>
-	</a>
 
-	<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
 		<span class='navbar-toggler-icon'></span>
-	</button>
+		</button>
 
-	<div class='collapse navbar-collapse' id='navbarNavDropdown'>
-		<ul class='navbar-nav'>
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
 
+				<!-- #TODO activate the page that is current (make sure to change class='nav-item active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../index.html'>About</a>
+				</li>
+				<li class='nav-item active'>
+					<!-- the rest of the pages is in the same folder (i.e. pages) so we can just directly name the file name -->
+					<a class='nav-link' href='events.html'>Events</a>
+				</li>
 
-			<li class='nav-item'>
-				<a class='nav-link' href='../index.html'>About</a>
-			</li>
-			<li class='nav-item'>
-				<a class='nav-link' href='News.html'>News</a>
-			</li>
-			<li class='nav-item active'>
-				<a class='nav-link' href='Events.html'>Events</a>
-			</li>
-			<li class='nav-item'>
-				<a class='nav-link' href='Get_involved.html'>Get involved</a>
-			</li>
-		</ul> 
+				<li class='nav-item'>
+					<a class='nav-link' href='get_involved.html'>Get involved</a>
+				</li>
+			</ul> 
 
-		<!-- the social media icons -->
-        <ul class='navbar-nav ml-auto'>
-					<a href='#' class='fa fa-instagram'></a>
-					<a href='#' class='fa fa-envelope'></a>
-					<a href='#' class='fa fa-slack'></a>
-        </ul>
+			<!-- the social media icons -->
+	        <ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+	        </ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+	<!-- #########page content start  ########-->
+	<!-- insert content here -->
+	<!-- #########page content end ############-->
+
+	<!-- footer -->
+	<div class='footer'>
+		<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+		<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+		<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
 	</div>
-</nav>
-
-
-
-
-<!-- footer -->
-<div class='footer'>
-  <a href='#' class='fa fa-instagram'></a>
-  <a href='#' class='fa fa-envelope'></a>
-  <a href='#' class='fa fa-slack'></a>
-</div>
-<!-- end of footer -->
+	<!-- end of footer -->
 
 </body>
 </html>
