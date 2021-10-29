@@ -120,6 +120,11 @@
 		margin: 0;
 	}
 
+	.backgroundRep{
+		background-image: url("images/logos/try.png");
+		background-repeat: repeat;
+	}
+
 
 	/*used for the footer*/
 	.footer {
