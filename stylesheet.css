@@ -131,7 +131,7 @@
 	/*repeated logo image (can be used inside div)*/
 	.backgroundRepLogo{
 		background-image: url("images/logos/westem-logo-white.png");
-		background-color: #84A59d;
+		background-color: #F9FCFB;
 		background-size: 70px;
 		background-repeat: repeat;
 		width: 100%; 
