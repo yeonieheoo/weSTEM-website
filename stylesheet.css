@@ -147,19 +147,19 @@
 
 	/*properties for both boxfull and InvolveBoxes*/
 	.boxfull, .InvolveBoxes{
-		width: 300px; 
-		height: 100px; 
 		position: relative; 
-		top: 150px; 
-		margin-bottom: 100px;
-		z-index: 99; 
 		background: #F8C1C0;
-		border: none;
+		font-weight: 100;
+	    padding: 20px; 
+		/*width: 300px; */
+		/*height: 100px; */
+		/*top: 150px; */
+		/*margin-bottom: 100px;*/
+		/*z-index: 99; */
+/*		border: none;*/
 		/*background: #F28482; */
-		font-weight: 100; 
-		height: inherit;
-	    box-sizing: border-box;
-	    padding: 20px;
+/*		height: inherit;
+	    box-sizing: border-box;*/
 	}
 
 	/*box with width 100%*/
@@ -167,8 +167,13 @@
 		width: 100%; 
 	}
 
-	.boxfull:hover, .InvolveBoxes:hover{
+	.InvolveBoxes:hover/*, .boxfull:hover*/{
 		background: #F28482; 
+		text-decoration: none;
+	}
+
+	noDeco:hover{
+		text-decoration: none;
 	}
 
 	/*used for the footer*/
