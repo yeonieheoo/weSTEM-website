@@ -127,33 +127,6 @@
 	}
 
 	/*get involved page stuff*/
-
-	/*repeated logo image (can be used inside div)*/
-	.backgroundRepLogo{
-		background-image: url("images/logos/westem-logo-white.png");
-		background-color: #F9FCFB;
-		background-size: 70px;
-		background-repeat: repeat;
-		width: 100%; 
-		height: 500px; 
-		position: fixed; 
-		top: 0; 
-		z-index: 0;
-	}
-
-	/*repeated Dot image (can be used inside div)*/
-	.backgroundRepDot{
-		background-image: url("https://pngimg.com/uploads/dot/small/dot_PNG29.png");
-/*		background-color: #84A59d;*/
-		background-size: 70px;
-		background-repeat: repeat;
-		width: 100%; 
-		height: 100%; 
-		position: fixed; 
-		top: 0; 
-		z-index: 0;
-	}
-
 	.titleBox{
 		width: 40%; 
 		height: 10%; 
@@ -162,7 +135,6 @@
 		z-index: 99; 
 		background: #f5f5f5; 
 		font-weight: 100; 
-		box-shadow: 2px 10px 50px;
 	}
 
 	.TitleText{
@@ -173,21 +145,31 @@
 		left: 10%;
 	}
 
-	.box1{
-		width: 100%; 
+	/*properties for both boxfull and InvolveBoxes*/
+	.boxfull, .InvolveBoxes{
+		width: 300px; 
 		height: 100px; 
 		position: relative; 
 		top: 150px; 
 		margin-bottom: 100px;
 		z-index: 99; 
-		background: #f5f5f5; 
+		background: #F8C1C0;
+		border: none;
+		/*background: #F28482; */
 		font-weight: 100; 
-		box-shadow: 2px -2px 50px;
 		height: inherit;
 	    box-sizing: border-box;
 	    padding: 20px;
 	}
 
+	/*box with width 100%*/
+	.boxfull{
+		width: 100%; 
+	}
+
+	.boxfull:hover, .InvolveBoxes:hover{
+		background: #F28482; 
+	}
 
 	/*used for the footer*/
 	.footer {
