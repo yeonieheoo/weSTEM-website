@@ -145,36 +145,6 @@
 		left: 10%;
 	}
 
-	/*properties for both boxfull and InvolveBoxes*/
-	.boxfull, .InvolveBoxes{
-		position: relative; 
-		background: #F8C1C0;
-		font-weight: 100;
-	    padding: 20px; 
-		/*width: 300px; */
-		/*height: 100px; */
-		/*top: 150px; */
-		/*margin-bottom: 100px;*/
-		/*z-index: 99; */
-/*		border: none;*/
-		/*background: #F28482; */
-/*		height: inherit;
-	    box-sizing: border-box;*/
-	}
-
-	/*box with width 100%*/
-	.boxfull{
-		width: 100%; 
-	}
-
-	.InvolveBoxes:hover/*, .boxfull:hover*/{
-		background: #F28482; 
-		text-decoration: none;
-	}
-
-	noDeco:hover{
-		text-decoration: none;
-	}
 
 	/*used for the footer*/
 	.footer {
@@ -184,3 +154,7 @@
 		text-align: center;
 	}
 	/*end footer used this link https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid*/ 
+ 
+    .coloredButton{
+      background: #383c44;
+    }

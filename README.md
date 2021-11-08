@@ -1,5 +1,5 @@
 # WeSTEM Web Page Revival 
-Nouf and Ivana and Yeonie got are the web team for 2021 - 2022. We are reviving an outdated website after three years of inactivity to serve as a point of contact and a resource hub for the Student Interest Group Women in STEM (WeSTEM).
+Nouf, Ivana, Yeonie and Avani got are the web team for 2021 - 2022. We are reviving an outdated website after three years of inactivity to serve as a point of contact and a resource hub for the Student Interest Group Women in STEM (WeSTEM).
 
 We will be looking for new team members to our team in Spring 2022 to ensure continuity for future years.   
 
