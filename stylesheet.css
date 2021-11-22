@@ -20,35 +20,6 @@
 	}
 
 
-	/*regular dark nav bar*/
-/*		.navbar navbar-inverse{
-	background-color: #f2f2f2;
-	}
-	.navbar-brand{
-	margin:0;
-	padding: 0;
-	}*/
-	/*regular dark nav bar end, unccoment this and comment the group below to get hte dark nav bar*/
-
-
-	/* Modify the Nav bar color */
-	.navbar-custom {
-		background-color: #F7EDE2;
-		color: black;
-	}
-
-
-
-	/* Modify brand and text color */ 
-	.navbar-custom .navbar-brand,
-	.navbar-custom .navbar-text {
-		color: black;
-		margin:0;
-		padding: 0;
-	}
-	/* Modify the nav bar color */
-
-
 
 
 	/* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -81,13 +52,13 @@
 	}
 
 	.fa-instagram {
-		color: #353a3f;
+		color: #F7EDE2;
 	}
 	.fa-envelope {
-		color: #353a3f;
+		color: #F7EDE2;
 	}
 	.fa-slack {
-		color: #353a3f; /* second color option: CADBC8*/;
+		color: #F7EDE2; /* second color option: CADBC8*/;
 	}/*end code for the icons */
 
 	/*used to change font to Montserrat*/
@@ -151,7 +122,7 @@
 	/*used for the footer*/
 	.footer {
 		grid-area: footer;
-		background-color: #F7EDE2;
+		background-color: #353a3f;
 		padding: 10px;
 		text-align: center;
 	}
@@ -159,6 +130,11 @@
  
     .coloredButton{
       background: #383c44;
+    }
+
+
+    .footer-text{
+    	color: white;
     }
 
 
