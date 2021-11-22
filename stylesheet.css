@@ -79,13 +79,13 @@
 	}
 
 	.fa-instagram {
-		color: #F7BD60;
+		color: white;
 	}
 	.fa-envelope {
-		color: #F7BD60;
+		color: white;
 	}
 	.fa-slack {
-		color: #F7BD60 /* second color option: CADBC8*/;
+		color: white; /* second color option: CADBC8*/;
 	}/*end code for the icons */
 
 	/*used to change font to Montserrat*/
