@@ -33,7 +33,7 @@
 
 	/* Modify the Nav bar color */
 	.navbar-custom {
-		background-color: #838080;
+		background-color: red;
 	}
 
 
@@ -79,13 +79,13 @@
 	}
 
 	.fa-instagram {
-		color: white;
+		color: #353a3f;
 	}
 	.fa-envelope {
-		color: white;
+		color: #353a3f;
 	}
 	.fa-slack {
-		color: white; /* second color option: CADBC8*/;
+		color: #353a3f; /* second color option: CADBC8*/;
 	}/*end code for the icons */
 
 	/*used to change font to Montserrat*/
