@@ -12,7 +12,7 @@ https://www.w3schools.com/html/default.asp
 
 ## Learn Bootstrap
 
-## list of pages with names
+## List of pages with names
 * About, *index.html*, landing page
 * Events, *pages/events.html* 
 * Get involved,  *pages/get_involved.html* 
