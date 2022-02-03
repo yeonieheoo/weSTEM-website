@@ -1,5 +1,5 @@
-# WeSTEM Web Page Revival 
-Nouf, Ivana, Yeonie and Avani got are the web team for 2021 - 2022. We are reviving an outdated website after three years of inactivity to serve as a point of contact and a resource hub for the Student Interest Group Women in STEM (WeSTEM).
+# weSTEM Web Page Revival 
+Nouf, Ivana and Yeonie are the web team for 2021 - 2022. We are reviving an outdated website after three years of inactivity to serve as a point of contact and a resource hub for the Student Interest Group Women in STEM (weSTEM).
 
 We will be looking for new team members to our team in Spring 2022 to ensure continuity for future years.   
 
@@ -11,7 +11,6 @@ https://www.w3schools.com/html/default.asp
 ## Learn CSS
 
 ## Learn Bootstrap
-
 
 ## list of pages with names
 * About, *index.html*, landing page
