@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>template</title>
+	<!-- this is a template for SUBpages -->
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!, 
+		events (events.html) in the pages folder which should be the same folder as all the subpages, 
+		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
+
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+	<!-- linked needed from the social media icons -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- used to import needed files to change the default font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
+
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+</head>
+<body>
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
+		</a>
+
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<span class='navbar-toggler-icon'></span>
+		</button>
+
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
+
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../index.html'>About</a>
+				</li>
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+					<a class='nav-link' href='events.html'>Events</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='get_involved.html'>Get involved</a>
+				</li>
+				<li class='nav-item active'>
+					<a class='nav-link' href='get_involved.html'>Newsletter</a>
+				</li>
+			</ul> 
+
+			<!-- the social media icons -->
+	        <ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+	        </ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+		<ul class="cards">
+		  <!-- next card -->
+			<li style="width: 20%; background: red; margin: 10px;">
+				<a href="https://www.instagram.com/westemnyuad/" class="card">
+					<img src="../images/icons/instagram.png" class="card__image" alt="" style="padding-bottom: 100px; width: 100% "/>
+					<div class="card__overlay">
+						<div class="card__header">
+							<!-- the svg here is the wavy thing at the bottom of the card that moves up on hovering  -->
+							<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+							<img class="card__thumb" src="../images/logos/westem-logo-grey.jpg" alt="" />
+							<div class="card__header-text">
+								<h3 class="card__title">Follow us on Instagram!</h3>
+							</div>          
+						</div>
+						<p class="card__description">The most up-to-date information about events and initiatives</p>
+					</div>
+				</a>
+			</li>
+
+		  <!-- next card -->
+			<li style="width: 20%; background: red;">
+				<a href="https://www.instagram.com/westemnyuad/" class="card">
+					<img src="../images/icons/instagram.png" class="card__image" alt="" style="padding-bottom: 100px; width: 100% "/>
+					<div class="card__overlay">
+						<div class="card__header">
+							<!-- the svg here is the wavy thing at the bottom of the card that moves up on hovering  -->
+							<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+							<img class="card__thumb" src="../images/logos/westem-logo-grey.jpg" alt="" />
+							<div class="card__header-text">
+								<h3 class="card__title">Follow us on Instagram!</h3>
+							</div>          
+						</div>
+						<p class="card__description">The most up-to-date information about events and initiatives</p>
+					</div>
+				</a>
+			</li>
+
+		  <!-- next card -->
+			<li style="width: 20%">
+				<a href="https://www.instagram.com/westemnyuad/" class="card">
+					<img src="../images/icons/instagram.png" class="card__image" alt="" style="padding-bottom: 100px; width: 100% "/>
+					<div class="card__overlay">
+						<div class="card__header">
+							<!-- the svg here is the wavy thing at the bottom of the card that moves up on hovering  -->
+							<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+							<img class="card__thumb" src="../images/logos/westem-logo-grey.jpg" alt="" />
+							<div class="card__header-text">
+								<h3 class="card__title">Follow us on Instagram!</h3>
+							</div>          
+						</div>
+						<p class="card__description">The most up-to-date information about events and initiatives</p>
+					</div>
+				</a>
+			</li>
+
+		  <!-- next card -->
+			<li style="width: 20%">
+				<a href="https://www.instagram.com/westemnyuad/" class="card">
+					<img src="../images/icons/instagram.png" class="card__image" alt="" style="padding-bottom: 100px; width: 100% "/>
+					<div class="card__overlay">
+						<div class="card__header">
+							<!-- the svg here is the wavy thing at the bottom of the card that moves up on hovering  -->
+							<svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+							<img class="card__thumb" src="../images/logos/westem-logo-grey.jpg" alt="" />
+							<div class="card__header-text">
+								<h3 class="card__title">Follow us on Instagram!</h3>
+							</div>          
+						</div>
+						<p class="card__description">The most up-to-date information about events and initiatives</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+	<!-- footer -->
+	<div class='footer'>
+		<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+		<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+		<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+	</div>
+	<!-- end of footer -->
+
+</body>
+</html>

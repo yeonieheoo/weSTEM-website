@@ -1,0 +1,15 @@
+
+/*add vertical lines beside text*/
+ul{
+	border-left: 6px solid black;	
+}
+body{
+	border-left: 6px solid black;
+	padding-left: 40px;	
+}
+/*end of add vertical lines beside text*/
+
+
+.Comment{
+	color: slategrey;
+}
