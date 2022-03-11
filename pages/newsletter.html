@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Newsletter</title>
+	<!-- this is a template for SUBpages -->
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!, 
+	events (events.html) in the pages folder which should be the same folder as all the subpages, 
+	get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
+
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+	<!-- linked needed from the social media icons -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- used to import needed files to change the default font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
+
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		#news1{
+			background-image: url("../images/newsletter/f2020/f2020_dec_4.jpeg");
+			background-size: 100%;
+		}
+
+	  @media (min-width: 768px) {
+		.bd-placeholder-img-lg {
+		  font-size: 3.5rem;
+		}
+	  }
+	</style>
+
+</head>
+<body>
+  <!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+	<a class='navbar-brand' href='#'>
+		<!-- adding weStem logo -->
+		<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+		</a>
+	</a>
+
+	<!--dropdown button that appears for smaller screens such as phone -->
+	<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+	<span class='navbar-toggler-icon'></span>
+	</button>
+
+	<!-- nav bar contents aka links to other pages and social media icons -->
+	<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+		<ul class='navbar-nav'>
+
+			<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+			<li class='nav-item'>
+				<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+				<a class='nav-link' href='../index.html'>About</a>
+			</li>
+			
+			<li class='nav-item'>
+				<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+				<a class='nav-link' href='events.html'>Events</a>
+			</li>
+
+			<li class='nav-item active'>
+				<a class='nav-link' href='get_involved.html'>Newsletter</a>
+			</li>
+
+			<li class='nav-item'>
+				<a class='nav-link' href='get_involved.html'>Get involved</a>
+			</li>
+
+		  </ul> 
+
+	  <!-- the social media icons -->
+		<ul class='navbar-nav ml-auto'>
+			<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+			<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+			<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+		</ul>
+	  <!-- end of the social media icons -->
+
+	</div>
+  </nav>
+  <!-- end of navigation bar -->
+
+<!-- start of grid -->
+  <div class="album py-5 bg-light">
+	<div class="container">
+
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+			<!-- element 1 -->
+			<a href="https://mailchi.mp/b4a09cc92e0f/westem-newsletter-fall-edition-4222321" target="_blank">
+				<div class="col">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" id="news1" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>newsletter #1</title></svg>
+
+						<div class="card-body">
+							<p class="card-text">2020 December 4th</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!-- element 2 -->
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmailchi.mp%2Fb4a09cc92e0f%2Fwestem-newsletter-fall-edition-4222321%3Ffbclid%3DIwAR0AI_mz0019KHDJBLtjeVb44cH5Qm46x5lsuL9Dviaj07OWZh-sGUuigyk&h=AT22DNcLDHvJlHk79njJABvzF3wOMs0HV5g3NtgbGsuNO948qzYnm0P_3l3qsh9epDq9u0tZNii02o8JhMwQvaqDiHJiZFcrIhVKG0XRm7m_QTmPxw3hTlBXOHXu8YCS6ou0p0sIw0I" target="_blank">
+				<div class="col">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" id="news1" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=https://mailchi.mp/b4a09cc92e0f/westem-newsletter-fall-edition-4222321 preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>newsletter #1</title></svg>
+
+						<div class="card-body">
+							<p class="card-text">2020 December 4th</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!-- element 3 -->
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmailchi.mp%2Fb4a09cc92e0f%2Fwestem-newsletter-fall-edition-4222321%3Ffbclid%3DIwAR0AI_mz0019KHDJBLtjeVb44cH5Qm46x5lsuL9Dviaj07OWZh-sGUuigyk&h=AT22DNcLDHvJlHk79njJABvzF3wOMs0HV5g3NtgbGsuNO948qzYnm0P_3l3qsh9epDq9u0tZNii02o8JhMwQvaqDiHJiZFcrIhVKG0XRm7m_QTmPxw3hTlBXOHXu8YCS6ou0p0sIw0I" target="_blank">
+				<div class="col">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" id="news1" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=https://mailchi.mp/b4a09cc92e0f/westem-newsletter-fall-edition-4222321 preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>newsletter #1</title></svg>
+
+						<div class="card-body">
+							<p class="card-text">2020 December 4th</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!-- element 3 -->
+
+			<!-- the link to the newsletter -->
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmailchi.mp%2Fb4a09cc92e0f%2Fwestem-newsletter-fall-edition-4222321%3Ffbclid%3DIwAR0AI_mz0019KHDJBLtjeVb44cH5Qm46x5lsuL9Dviaj07OWZh-sGUuigyk&h=AT22DNcLDHvJlHk79njJABvzF3wOMs0HV5g3NtgbGsuNO948qzYnm0P_3l3qsh9epDq9u0tZNii02o8JhMwQvaqDiHJiZFcrIhVKG0XRm7m_QTmPxw3hTlBXOHXu8YCS6ou0p0sIw0I" target="_blank">
+				<div class="col">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" id="news1" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=https://mailchi.mp/b4a09cc92e0f/westem-newsletter-fall-edition-4222321 preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>newsletter #1</title></svg>
+
+						<div class="card-body">
+							<p class="card-text">2020 December 4th</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<!-- element 4 -->
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmailchi.mp%2Fb4a09cc92e0f%2Fwestem-newsletter-fall-edition-4222321%3Ffbclid%3DIwAR0AI_mz0019KHDJBLtjeVb44cH5Qm46x5lsuL9Dviaj07OWZh-sGUuigyk&h=AT22DNcLDHvJlHk79njJABvzF3wOMs0HV5g3NtgbGsuNO948qzYnm0P_3l3qsh9epDq9u0tZNii02o8JhMwQvaqDiHJiZFcrIhVKG0XRm7m_QTmPxw3hTlBXOHXu8YCS6ou0p0sIw0I" target="_blank">
+				<div class="col">
+					<div class="card shadow-sm">
+						<svg class="bd-placeholder-img card-img-top" id="news1" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=https://mailchi.mp/b4a09cc92e0f/westem-newsletter-fall-edition-4222321 preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>newsletter #1</title></svg>
+
+						<div class="card-body">
+							<p class="card-text">2020 December 4th</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+
+		</div>
+	</div>
+</div>
+<!-- </div></div></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- fall 2020 -->
+	<!-- <img src="../images/newsletter/f2020/f2020_dec_4.jpeg"> -->
+	<img src="../images/newsletter/f2020/f2020_nov_21.png">
+	<img src="../images/newsletter/f2020/f2020_nov_8.jpeg">
+	<img src="../images/newsletter/f2020/f2020_oct_19.jpeg">
+	<img src="../images/newsletter/f2020/f2020_oct_29(check).png">
+	<img src="../images/newsletter/f2020/f2020_sept_27.jpeg">
+	<img src="../images/newsletter/f2020/f2020_sept_6.jpeg">
+
+	<!-- spring 2021 -->
+	<img src="../images/newsletter/s2021/s2021_april_29.jpeg">
+	<img src="../images/newsletter/s2021/s2021_feb_10.jpeg">
+	<img src="../images/newsletter/s2021/s2021_feb_11.png">
+	<img src="../images/newsletter/s2021/s2021_june_13.jpeg">
+	<img src="../images/newsletter/s2021/s2021_march_29.gif">
+	<img src="../images/newsletter/s2021/s2022_feb_12.jpeg"> 
+
+
+	<!-- fall 2021 -->
+	<img src="../images/newsletter/f2021/f2021_aug_29.jpeg">
+	<img src="../images/newsletter/f2021/f2021_dec_12.png">
+	<img src="../images/newsletter/f2021/f2021_nov_11.png">
+	<img src="../images/newsletter/f2021/f2021_nov_17.png">
+	<img src="../images/newsletter/f2021/f2021_oct_12.png">
+	<img src="../images/newsletter/f2021/f2021_sept_17.jpeg">
+
+	<!-- spring 2020 -->
+	<img src="../images/newsletter/s2020_aug_2.png">
+
+  <!-- footer -->
+  <div class='footer'>
+	<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+	<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+	<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+	<p class="footer-text">weSTEM 2021 | by Nouf Alabbasi, Yeonie Heo, and Ivana Drabova</p>
+  </div>
+  <!-- end of footer -->
+
+</body>
+</html>
