@@ -255,3 +255,15 @@
 		  -webkit-line-clamp: 3;
 		  overflow: hidden;
 		}    
+
+
+
+		/*engage button*/
+		#Fixed_button{
+			 z-index: 999; 
+			 position:fixed; 
+			 bottom: 10%; 
+			 /*height: 8%; */
+			 right: 1%;
+		}
+		
