@@ -128,14 +128,14 @@
 	}
 	/*end footer used this link https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid*/ 
  
-    .coloredButton{
-      background: #383c44;
-    }
+	.coloredButton{
+	  background: #383c44;
+	}
 
 
-    .footer-text{
-    	color: white;
-    }
+	.footer-text{
+		color: white;
+	}
 
 
 /*the get involved CSS taken from https://codepen.io/seyedi/pen/zYoeLEv*/
@@ -270,7 +270,7 @@
 
 		/*the newsletter content*/
 
-				.bd-placeholder-img {
+		.bd-placeholder-img {
 			font-size: 1.125rem;
 			text-anchor: middle;
 			-webkit-user-select: none;
@@ -425,3 +425,36 @@
 		  font-size: 3.5rem;
 		}
 	  }
+
+
+
+	  /*blog page*/
+.box-shadow{
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+} 
+
+#blogImgs{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-height: 250px;
+  height: 250px; 
+  object-fit: cover;
+}
+
+#blog_row{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.btn-secondary{
+/*	position: relative;
+	bottom: 0;
+/*	right: 0;
+	margin: 5px*/;
+	float: right;
+}
+
+#titleBlog{
+	text-align: center;
+}
