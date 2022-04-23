@@ -19,6 +19,9 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
 
+    <!-- the icon in the tab -->
+    <link rel="icon" href="../images/logos/westem-logo-black.png">
+    
 	<!-- linked needed from the social media icons -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
@@ -28,73 +31,7 @@
 	<!-- link to our stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
 
-</head>
-<body>
-	<!-- nav bar -->
-	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
 
-		<a class='navbar-brand' href='#'>
-			<!-- adding weStem logo -->
-			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
-			</a>
-		</a>
-
-		<!--dropdown button that appears for smaller screens such as phone -->
-		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
-		<span class='navbar-toggler-icon'></span>
-		</button>
-
-		<!-- nav bar contents aka links to other pages and social media icons -->
-		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
-			<ul class='navbar-nav'>
-
-				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
-				<li class='nav-item'>
-					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
-					<a class='nav-link' href='../index.html'>About</a>
-				</li>
-				<li class='nav-item'>
-					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
-					<a class='nav-link' href='events.html'>Events</a>
-				</li>
-
-				<li class='nav-item'>
-					<a class='nav-link' href='blog_waiting.html'>Blog</a>
-				</li>
-
-				<li class='nav-item '>
-					<a class='nav-link' href='newsletter.html'>Newsletter</a>
-				</li>
-
-				<li class='nav-item active'>
-					<a class='nav-link' href='resources.html'>Resources</a>
-				</li>
-
-				<li class='nav-item'>
-					<a class='nav-link' href='get_involved.html'>Get involved</a>
-				</li>
-
-			     </ul> 
-
-			<!-- the social media icons -->
-			<ul class='navbar-nav ml-auto'>
-				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
-				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
-				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
-			</ul>
-			<!-- end of the social media icons -->
-
-		</div>
-	</nav>
-	<!-- end of navigation bar -->
-
-	<!-- #########page content start  ########-->
-	<!-- insert content here -->
-	<!-- #########page content end ############-->
-
-
-<html lang="en">
-<head>
     <link id="frame-css" href="https://we-are-hiring.cdn.personio.de/jobs/v2/min/css/styles.482cf70806079dde2679.css" rel="stylesheet">
 
         <style id="settings-css">
@@ -111,10 +48,10 @@
         h6 {
             color: #160C45;
         }
-.background-image-wrapper { background-image: none;}
-                    .background-image-wrapper {
-                background-image:   'none' ;
-                background-color: #424242;
+        .background-image-wrapper { background-image: none;}
+        .background-image-wrapper {
+            background-image:   'none' ;
+            background-color: #424242;
             }
         ;
 
@@ -205,9 +142,77 @@
         }
 
         </style>
-</head>
 
-<body class="body-container">
+</head>
+<body>
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
+		</a>
+
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<span class='navbar-toggler-icon'></span>
+		</button>
+
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
+
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../index.html'>About</a>
+				</li>
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+					<a class='nav-link' href='events.html'>Events</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='blog_waiting.html'>Blog</a>
+				</li>
+
+				<li class='nav-item '>
+					<a class='nav-link' href='newsletter.html'>Newsletter</a>
+				</li>
+
+				<li class='nav-item active'>
+					<a class='nav-link' href='resources.html'>Resources</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='get_involved.html'>Get involved</a>
+				</li>
+
+			     </ul> 
+
+			<!-- the social media icons -->
+			<ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+			</ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+	<!-- #########page content start  ########-->
+	<!-- insert content here -->
+	<!-- #########page content end ############-->
+
+
+<!-- <html lang="en">
+
+</head> -->
+
+<!-- <body > -->
 <div id="load-assets-data" class="hidden" data-cdn-url="https://we-are-hiring.cdn.personio.de/jobs/v2/"></div>
     <div id="log-access-api" class="hidden" data-api-url="https://elkaso-jobs.personio.de"></div> 
 </div>
