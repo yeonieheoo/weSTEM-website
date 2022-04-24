@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Blog</title>
+	<!-- this is a template for SUBpages -->
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!, 
+		events (events.html) in the pages folder which should be the same folder as all the subpages, 
+		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
+
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+	<!-- the icon in the tab -->
+	<link rel="icon" href="../images/logos/westem-logo-black.png">
+
+	<!-- linked needed from the social media icons -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- used to import needed files to change the default font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
+
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+
+
+	<!-- bootstrap; cards from https://codes4education.com/how-to-use-responsive-card-in-bootstrap-4/ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
+		</a>
+
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<span class='navbar-toggler-icon'></span>
+		</button>
+
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
+
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../index.html'>About</a>
+				</li>
+				
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+					<a class='nav-link' href='events.html'>Events</a>
+				</li>
+
+				<li class='nav-item active'>
+					<a class='nav-link' href='blog_waiting.html'>Blog</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='newsletter.html'>Newsletter</a>
+				</li>
+
+<!-- 				<li class='nav-item'>
+					<a class='nav-link' href='resources.html'>Resources</a>
+				</li> -->
+
+				<li class='nav-item'>
+					<a class='nav-link' href='resources_waiting.html'>Resources</a>
+				</li>
+				
+				<li class='nav-item'>
+					<a class='nav-link' href='get_involved.html'>Get involved</a>
+				</li>
+
+			  </ul> 
+
+			<!-- the social media icons -->
+			<ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+			</ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+	<!-- weRead -->
+	<h1 class="heading" id="titleBlog">WeBLOG</h1>
+	<hr>
+	<div class="container">
+		<div class="row" id="blog_row">
+
+			<!-- blog 1 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Blog 1</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 2 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Blog 2</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 3 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Blog 3</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- weRead -->
+	<h1 class="heading"id="titleBlog">WeREAD</h1>
+	<hr>
+	<div class="container">
+		<div class="row" id="blog_row">
+
+			<!-- article 1 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/westem_conference.png" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Westem’s 6th Annual High School Conference</h5>
+						<p class="card-text">Tatiana Houhou reports on WeStem's 2022 conference for High School Girls in the UAE.</p>
+						<a href="https://www.thegazelle.org/issue/225/news/westem-sixth-hsc" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- article 2 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/westem_empowering.jpg" class="card-img-top" alt="..."  id="blogImgs">  
+					<div class="card-body">
+						<h5 class="card-title">Westem Empowering Women on Campus, Beyond</h5>
+						<p class="card-text">Mashal-Memon introduces our group to the NYU Abu Dhabi community in 2016.</p>
+						<a href="https://www.thegazelle.org/issue/83/features/westem" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- article 3 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/simran_article.gif" class="card-img-top" alt="..."  id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">To My Fellow Gender-marginalized Peers In Stem: You Are A Force To Be Reckoned With</h5>
+						<p class="card-text">Simran Parwani, WeStem president for 2020, uses data visualization to tell stories of toxic learning culture in STEM at NYU Abu Dhabi.</p>
+						<a href="https://www.thegazelle.org/issue/204/features/gender-marginalized-stem-force-reckoned" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- row 2 -->
+		<div class="row" id="blog_row">
+
+			<!-- article 4 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/conversation.png" class="card-img-top" alt="..."  id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">A Conversation With Two Women In Stem At Nyuad: Opportunities And Obstacles</h5>
+						<p class="card-text">Gayoung Lee interviews STEM students at NYU Abu Dhabi about their experiences.</p>
+						<a href="https://www.thegazelle.org/issue/214/features/stem-nyuad-women" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- article 5 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<!-- source for img: https://womenyoushouldknow.net/downloadable-stem-role-models-posters/ -->
+					<img src="../images/blog_page/MathConference.png" class="card-img-top" alt="source: https://womenyoushouldknow.net/downloadable-stem-role-models-posters/"  id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Women In Mathematics Conference 2020</h5>
+						<p class="card-text">Tracy Vavrova reports on Women in Mathematics Conference hosted at NYU Abu Dhabi in 2020</p>
+						<a href="https://www.thegazelle.org/issue/173/features/women-in-mathematics-conference" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- article 6 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/embracing.png" class="card-img-top" alt="..."  id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Embracing Complexities: My Journey as a Woman in STEM</h5>
+						<p class="card-text">Gopika Krishnan, WeStem president for 2022,  reflects on her journey at NYU Abu Dhabi.</p>
+						<a href="https://www.thegazelle.org/issue/220/opinion/women-in-stem" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- weRECOMMEND -->
+	<h1 class="heading" id="titleBlog">WeRECOMMEND</h1>
+	<hr>
+	<div class="container">
+		<div class="row" id="blog_row">
+
+			<!-- blog 1 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">rec 1</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 2 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">rec 2</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 3 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">rec 3</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- weRECOMMEND -->
+	<h1 class="heading" id="titleBlog">WeLISTEN</h1>
+	<hr>
+	<div class="container">
+		<div class="row" id="blog_row">
+
+			<!-- blog 1 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">lis 1</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 2 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">lis 2</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 3 -->
+			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">lis 3</h5>
+						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class='footer'>
+		<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+		<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+		<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+	</div>
+	<!-- end of footer -->
+
+
+
+</body>
+</html>
