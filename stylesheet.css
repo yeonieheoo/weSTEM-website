@@ -458,3 +458,19 @@
 #titleBlog{
 	text-align: center;
 }
+
+
+
+/*recource page*/
+#Biology{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/biology.png");
+			background-size: 100%;
+		}
+#chemistry{
+			background-image: url("images/newsletter/s2020_june_21.png");
+			background-size: 100%;
+		}
+#Biology{
+			background-image: url("images/newsletter/s2020_june_21.png");
+			background-size: 100%;
+		}
