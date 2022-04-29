@@ -466,11 +466,39 @@
 			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/biology.png");
 			background-size: 100%;
 		}
-#chemistry{
-			background-image: url("images/newsletter/s2020_june_21.png");
+#Chemistry{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/chemistry.png");
 			background-size: 100%;
 		}
-#Biology{
-			background-image: url("images/newsletter/s2020_june_21.png");
+#Compsci{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/computer_science.png");
 			background-size: 100%;
 		}
+#Engineering{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/engineering.png");
+			background-size: 100%;
+		}
+#Mathematics{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/mathematics.png");
+			background-size: 100%;
+		}
+#Physics{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/physics.png");
+			background-size: 100%;
+		}
+#Psychology{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/Recources/psychology.png");
+			background-size: 100%;
+		}
+
+#StudyGuide{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/placeholders/comingSoon.png");
+			background-size: 100%;
+		}
+#PastExams{
+			background-image: url("/Users/noufabbasi/Desktop/WeStem/web/images/placeholders/comingSoon.png");
+			background-size: 100%;
+		}
+
+
+
