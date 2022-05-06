@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<title>Events</title>
+	<title>template</title>
+	<!-- this is a template for SUBpages -->
 	<!-- dependencies: stylesheet in the main folder -->
 	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
 	<!-- email: mailto:westem.team@nyu.edu-->
 	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
-	<!-- pages: about(index.html) in main folder!!!,
-		events (events.html) in the pages folder which should be the same folder as all the subpages,
+	<!-- pages: about(index.html) in main folder!!!, 
+		events (events.html) in the pages folder which should be the same folder as all the subpages, 
 		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
 
 	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
-  <meta charset='utf-8'>
+	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
@@ -20,7 +21,7 @@
 
 	<!-- the icon in the tab -->
 	<link rel="icon" href="../images/logos/westem-logo-black.png">
-	
+
 	<!-- linked needed from the social media icons -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
@@ -29,16 +30,29 @@
 
 	<!-- link to our stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
-</head>
-<body>
-	<!-- nav bar -->
-  <nav class='navbar sticky-top navbar-expand-lg navbar-dark bg-dark '> <!-- use navbar-dark bg-dark instead of navbar-custom to get a dark navbar or replace dark with light to get light -->
+<style>
+  body {
+	position: relative;
+  }
+  ul.nav-pills {
+	top: 20px;
+	position: fixed;
+  }
+  div.col-8 div {
+	height: 500px;
+  }
 
-	<a class='navbar-brand' href='#'>
-		<!-- adding weStem logo -->
-		<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
 		</a>
-	</a>
 
 		<!--dropdown button that appears for smaller screens such as phone -->
 		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
@@ -49,13 +63,13 @@
 		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
 			<ul class='navbar-nav'>
 
-				<!-- #TODO activate the page that is current (make sure to change class='nav-item active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
 				<li class='nav-item'>
 					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
 					<a class='nav-link' href='../index.html'>About</a>
 				</li>
-				<li class='nav-item active'>
-					<!-- the rest of the pages is in the same folder (i.e. pages) so we can just directly name the file name -->
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
 					<a class='nav-link' href='events.html'>Events</a>
 				</li>
 
@@ -66,7 +80,7 @@
 				<li class='nav-item'>
 					<a class='nav-link' href='newsletter.html'>Newsletter</a>
 				</li>
-
+				
 				<li class='nav-item'>
 					<a class='nav-link' href='resources.html'>Resources</a>
 				</li>
@@ -74,497 +88,371 @@
 				<li class='nav-item'>
 					<a class='nav-link' href='get_involved.html'>Get involved</a>
 				</li>
-			</ul>
+			</ul> 
 
 			<!-- the social media icons -->
-		<ul class='navbar-nav ml-auto'>
+			<ul class='navbar-nav ml-auto'>
 				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
 				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
 				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
-		</ul>
+			</ul>
 			<!-- end of the social media icons -->
 
 		</div>
 	</nav>
 	<!-- end of navigation bar -->
 
-	<!-- #########page content start  ########-->
-<br>
 
-<!-- Engage button -->
-<a href="https://engage.nyuad.nyu.edu/organization/westem-women-in-science-and-engineering" target="_blank" class="btn rounded-pill btn-dark btn-lg"  id="Fixed_button" role="button">Join Engage</a>
-<!-- Engage button -->
-
-<div class='container'>
-	 <center><p style='font-size: 50px;'> weSTEM's Projects</p></center>
-</div>
-<br>
+  <!-- Engage button -->
+  <a href="https://engage.nyuad.nyu.edu/organization/westem-women-in-science-and-engineering" target="_blank" class="btn rounded-pill btn-dark btn-lg" style="left: 0; right: auto;" id="Fixed_button" role="button">Join Engage</a> <!--the style is a temp fix, a new id should be created with those properties-->
+  <!-- Engage button -->
 
 
-<!-- pasting the icons-->
-<!-- <div class="container">
-  <div class='row text-center'>
-	  <div class='col-lg-1'></div> -->
+  <!-- using scrollspy from https://www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp specifically https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy2&stacked=h-->
 
-		<!-- my-auto centers the content of the div vertically -->
-	  <!-- the first icon -->
-<!-- 	  <div class='col-lg-2 my-auto'>
-		  <a href="#community_engagement"> -->
+  <div class="container-fluid">
+	<div class="row">
+	  <nav class="col-xs-4 col-sm-5 col-md-4 col-lg-3 carousel-dark" id="myScrollspy">
+		<ul class="nav nav-pills flex-column">
+		  <li class="nav-item" style="margin-top: 40%"> <!--the style is a temp fix to enssure that the top isn't too close to the nav bar-->
+			<a class="nav-link active" href="#section1">Community Engagement</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#section2">Community Spotlight</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#section3">First Year Programming</a>
+		  </li>
+		  <li class="nav-item ">
+			<a class="nav-link" href="#section4">Highschool Outreach</a>
+		  </li>
+		  <li class="nav-item ">
+			<a class="nav-link"  href="#section5">Informative Workshops</a>
+		  </li>
+		</ul>
+	  </nav>
 
-			<!-- the figure allows you to add images with captions under them -->
-<!-- 			<figure>
-			  <img src="../images/icons/engagement_icon.png" style='width: 150px; height: 150px;'> -->
-			  <!-- <figcaption> Community Engagement </figcaption> -->
-<!-- 			</figure>
+	  <div class="col-xs-8 col-sm-7 col-md-8 col-lg-9">
+	  	<!-- section 1 -->
+		<div id="section1" >    
+			<center><p style="font-size: 30px; margin-top: 5%;">Community Engagement</p></center> <!--the style(margin) is a temp fix to enssure that the top isn't too close to the nav bar-->
 
-		  </a>
-	  </div> -->
+			<!-- community engagement-->
+			<div class="row">
+				<div class="col-sm-12" >
+					<!-- community engagement: picture a scientist film screening-->
+					<p style="font-size:18px;">
+					  <b> Picture a Scientist Film Screening </b>: weSTEM organized a virtual screening of the movie ‘Picture a Scientist’ about three accomplished researchers who talk about their journey in science and their experiences with harassment and microaggressions in the workplace.   </br>
+					</p>
 
-	  <!-- the second icon -->
-<!-- 	  <div class='col-lg-2 my-auto'>
-		  <a href="#comunity_spotlight">
-			<figure>
-			  <img src="../images/icons/spotlight_icon.png" style='width: 150px; height: 150px;'>
-			  <figcaption> use this line to add captions to the icons </figcaption>
-			</figure>
-		  </a>
+					<!--embeding the video-->
+					<center>
+						<div class="embed-responsive embed-responsive-16by9" style="margin-top: 10px; margin-bottom: 10px; width: 50%;">
+							<iframe src="https://www.youtube.com/embed/rUYxkB8th2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</center>
+					<!-- community engagement: productivity hour-->
+					</br>
+					<right>
+					  	<p style="font-size:18px;">
+						<b> Group Study </b>: “Productivity Hour” study session was held with virtual breakout rooms of 2-3 people to work on our respective assignments. </br>
+					  	</p>
+					</right>
+
+
+					<!-- community engagement: course advising sessions-->
+				  	<right>
+				  		<p style="font-size:18px;">
+						<b> Course Advising Sessions </b>: Insights and tips from friends on campus could make our whole semester much easier. All STEM majors were invited to this event to give and get help. </br>
+					  	</p>
+					</right>
+					</br>
+
+
+					<!-- community engagement: coffee chat-->
+					<right>
+						<p style="font-size:18px;">
+						<b> Coffee Chat </b>: Stressed about school? WeSTEM Coffee Chat has always been the best place to vent and make new friends along the way. Our team pairs people from the community to meet over coffee. </br>
+						</p>
+					</right>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+					<img
+					  src="../images/eventpage_images/community_engagement/ce_group_study.png"
+					  class="w-100 shadow-1-strong rounded mb-4"
+					  alt=""
+					/>
+				</div>
+
+				<div class="col-lg-4 mb-4 mb-lg-0">
+					<img
+					  src="../images/eventpage_images/community_engagement/ce_course_advising_sessions.png"
+					  class="w-100 shadow-1-strong rounded mb-4"
+					  alt=""
+					/>
+				</div>
+
+				<div class="col-lg-4 mb-4 mb-lg-0">
+					<img
+					  src="../images/eventpage_images/community_engagement/ce_coffee_chat.png"
+					  class="w-100 shadow-1-strong rounded mb-4"
+					  alt=""
+					/>
+				</div>
+			</div>
+		</div>
+
+
+
+	  	<!-- section 2 -->
+		<div id="section2"> 
+			<center><p style="font-size: 30px;">Community Spotlight</p></center>
+		 	<div class="row">
+				<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_1.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""
+					/>
+
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_2.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""
+					/>
+				</div>
+
+				<div class="col-lg-4 mb-4 mb-lg-0">
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_3.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""
+					/>
+
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_4.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""
+				  />
+				</div>
+
+				<div class="col-lg-4 mb-4 mb-lg-0">
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_5.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""
+					/>
+
+					<img
+					src="../images/eventpage_images/community_spotlight/cs_6.png"
+					class="w-100 shadow-1-strong rounded mb-4"
+					alt=""/>
+				</div>
+			</div>
+		</div>  
+
+
+
+	  	<!-- section 3 -->
+		<div id="section3">         
+			<center><p style="font-size: 30px;">First Year Programming</p></center>
+			<div class="row">
+
+				<!-- the first programming element -->
+				<!-- margin: auto; allows the two figure elements to be spaced out equally across the row-->
+				<div class='col-lg-5 my-auto' style="text-align: center; margin: auto;">
+					<figure style="align-self: center; margin: 5px;">
+						<img src="../images/eventpage_images/first_year_programming/fyp_student_experience_panel.png" style='width: 400px; height: 400px;"'>
+						<figcaption>Creating an environment that encourages a culture of allyship and support for one another.</figcaption>
+					</figure>
+				</div>
+
+
+				<!-- the second programming element -->
+				<div class='col-lg-5 my-auto' style="text-align: center; margin: auto;">
+						<figure>
+							<img src="../images/eventpage_images/first_year_programming/fyp_mentorship_program.png" style=' width: 400px; height: 400px;"'>
+							<figcaption>An interactive panel in which NYUAD students share advice and help incoming first year students understand the journey of a STEM major at NYUAD.</figcaption>
+						</figure>
+				</div>
+			</div>
+		</div>
+
+
+
+	  	<!-- section 4 -->
+		<div id="section4">         
+			<center><p style="font-size: 30px;">Highschool Outreach</p></center>
+			<div class="row" >
+				<div class="col-sm-12" >
+					<p style="font-size:18px;">
+						<b> Highschool Conference </b>: The goal of the conference is to encourage high school girls in the UAE to pursue college studies and careers in Science, Technology, Engineering, and Mathematics. By interacting with girls with full potential, weSTEM hopes to assist them find their passion in STEM and build confidence as future scientists.</br>
+					</p>
+
+					<center>
+						<p style="font-size: 30px;">
+				 			<img src="../images/eventpage_images/highschool_conference.png"  style=" width: 100%;">
+						</p>
+					</center>
+				</div>
+			</div>
+		</div>  
+
+
+
+	  	<!-- section 5 -->    
+		<div id="section5">         
+			<center><p style="font-size: 30px;">Informative Workshops</p></center>
+			  <!-- the carousel start (code acquired and modified from botstrap examples) -->
+			  <div class="row">
+				<div class="col-sm-1" > </div>
+				<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-ride="carousel">
+				  <!-- Controls -->
+				  <div class="d-flex justify-content-center mb-4">
+					<button class="carousel-control-prev position-relative coloredButton" type="button" data-target="#carouselMultiItemExample" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+
+					<button class="carousel-control-next position-relative coloredButton" type="button" data-target="#carouselMultiItemExample" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+
+				<!-- Inner -->
+				<div class="carousel-inner py-4">
+				  <!-- Single item -->
+				  <div class="carousel-item active">
+					<div class="container">
+					  <div class="row">
+						<div class="col-lg-4">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_undergrad_research.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Undergraduate Research Panel</h5>
+							  <p class="card-text">
+								Partnering with the Office of Undergraduate Research, weSTEM members learnt about ways to join a research lab, reach out to professors or to lead their own research project and publish a paper in a journal.
+							  </p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="col-lg-4 d-none d-lg-block">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_women_in_the_workplace.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Women in the Workplace</h5>
+							  <p class="card-text">
+								Collaboration with NYUAD Career Development Center and Women’s Leadership Network, this panel was discussion-based, moderated by three inspiring women from different industries.
+							  </p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="col-lg-4 d-none d-lg-block">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_summer_research_programs.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Summer Research Programs</h5>
+							  <p class="card-text">
+								Students who participated in Undergraduate Summer Research Programs shared their experiences.
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- Single item -->
+				  <div class="carousel-item">
+					<div class="container">
+					  <div class="row">
+						<div class="col-lg-4 col-md-12">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_grace_hopper.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Grace Hopper Celebration Chat</h5>
+							  <p class="card-text">
+								Grace Hopper Celebration is the largest technical conference for women in Asia. WeSTEM community members who previously attended the program share tips for the scholarship application as well as interview, internship and CV tips.
+							  </p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="col-lg-4 d-none d-lg-block">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_careers_in_psych_and_neuroscience.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Careers and Graduate Schools in Psychology and Neuroscience</h5>
+							  <p class="card-text">
+								In a collaboration with the student interest group NeuroAD and the Career Development Center, professors of Psychology and lab assistants gathered to share insights about the vision of psychology and neuroscience.
+							  </p>
+							</div>
+						  </div>
+						</div>
+
+						<div class="col-lg-4 d-none d-lg-block">
+						  <div class="card">
+							<img
+							  src="../images/eventpage_images/informative_workshops/iw_engineering_internships.png"
+							  class="card-img-top"
+							  alt="..."
+							/>
+							<div class="card-body">
+							  <h5 class="card-title">Engineering Internships</h5>
+							  <p class="card-text">
+								weSTEM collaborated with the Engineering Academic Committee as well as the Career Development Center to seek opportunities students can engage in when applying, and working as an engineering intern.
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				</div>
+			  </div>
+		</div>
+
+
 	  </div>
- -->
-	  <!-- the third icon -->
-<!-- 	  <div class='col-lg-2 my-auto' >
-		  <a href="#first_year_programming">
-			<figure>
-			  <img src="../images/icons/first_icon.png" style='width: 150px; height: 150px;'>
-			</figure>
-		  </a>
-	  </div> -->
-
-	  <!-- the forth icon -->
-	<!--   <div class='col-lg-2 my-auto'>
-		  <a href="#outreach">
-			<figure>
-			  <img src="../images/icons/highschool_icon.png" style='width: 150px; height: 150px;'>
-			</figure>
-		  </a>
-	  </div>
- -->
-	  <!-- the fifth icon -->
-<!-- 	  <div class='col-lg-2 my-auto'>
-		  <a href="#informative_workshops">
-			<figure>
-			  <img src="../images/icons/workshop_icon.png" style='width: 150px; height: 150px;'>
-			</figure>
-		  </a>
-	  </div>
-
-	  <div class='col-lg-1'></div>
 	</div>
-	<hr>
   </div>
-</br>
- -->
-
-
-<body data-spy="scroll" data-target="#mySchollspy" data-offset="20">
-	<div class="container">
-		<div class="row">
-			<nav class="col-sm-3" id="mySchollspy">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#community_engagement">Community Engagement</a></li>
-				</ul>
-			</nav>
-			<div id="community_engagement">
-			</div>
-		</div>	
-	</div>
-</body>
-
-<body data-spy="scroll" data-target="#mySchollspy" data-offset="20">
-	<div class="container">
-		<div class="row">
-			<nav class="col-sm-3" id="mySchollspy">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#community_spotlight">Community Spotlight</a></li>
-				</ul>
-			</nav>
-			<div id="community_spotlight">
-			</div>
-		</div>	
-	</div>
-</body>
-
-<body data-spy="scroll" data-target="#mySchollspy" data-offset="20">
-	<div class="container">
-		<div class="row">
-			<nav class="col-sm-3" id="mySchollspy">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#first_year_programming">First Year Programming</a></li>
-				</ul>
-			</nav>
-			<div id="first_year_programming">
-			</div>
-		</div>	
-	</div>
-</body>
-
-<body data-spy="scroll" data-target="#mySchollspy" data-offset="20">
-	<div class="container">
-		<div class="row">
-			<nav class="col-sm-3" id="mySchollspy">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#outreach">Highschool Outreach</a></li>
-				</ul>
-			</nav>
-			<div id="outreach">
-			</div>
-		</div>	
-	</div>
-</body>
-
-<body data-spy="scroll" data-target="#mySchollspy" data-offset="20">
-	<div class="container">
-		<div class="row">
-			<nav class="col-sm-3" id="mySchollspy">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#informative_workshops">Informative Workshops</a></li>
-				</ul>
-			</nav>
-			<div id="informative_workshops">
-			</div>
-		</div>	
-	</div>
-</body>
-
-
-	<!-- community engagement-->
-  <section id=community_engagement>
-	<div class="container">
-		<center><p style="font-size: 30px;">1. Community Engagement </p></center>
-
-	  <div class="row">
-		<!-- community engagement: picture a scientist film screening-->
-		<p style="font-size:18px;">
-		  <b> Picture a Scientist Film Screening </b>: weSTEM organized a virtual screening of the movie ‘Picture a Scientist’ about three accomplished researchers who talk about their journey in science and their experiences with harassment and microaggressions in the workplace.   </br>
-		</p>
-
-		<!--embeding the video-->
-		  <div class="embed-responsive embed-responsive-16by9" style="margin-top: 10px; margin-bottom: 10px;">
-			<iframe src="https://www.youtube.com/embed/rUYxkB8th2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		  </div>
-
-		<!-- community engagement: productivity hour-->
-		  </br>
-		  <right><p style="font-size:18px;">
-			<b> Group Study </b>: “Productivity Hour” study session was held with virtual breakout rooms of 2-3 people to work on our respective assignments. </br>
-		  </p></right>
-
-
-		<!-- community engagement: course advising sessions-->
-		  <right><p style="font-size:18px;">
-			<b> Course Advising Sessions </b>: Insights and tips from friends on campus could make our whole semester much easier. All STEM majors were invited to this event to give and get help. </br>
-		  </p></right>
-		  </br>
-
-
-		<!-- community engagement: coffee chat-->
-			<right><p style="font-size:18px;">
-				<b> Coffee Chat </b>: Stressed about school? WeSTEM Coffee Chat has always been the best place to vent and make new friends along the way. Our team pairs people from the community to meet over coffee. </br>
-			</p></right>
-	  </div>
-
-	<!-- organizing the three images using a bootstrap-->
-	 <div class="row">
-		<div class="col-sm-1" > </div>
-
-
-		<div class="row">
-		  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-			<img
-			  src="../images/eventpage_images/community_engagement/ce_group_study.png"
-			  class="w-100 shadow-1-strong rounded mb-4"
-			  alt=""
-			/>
-		  </div>
-
-		  <div class="col-lg-4 mb-4 mb-lg-0">
-			<img
-			  src="../images/eventpage_images/community_engagement/ce_course_advising_sessions.png"
-			  class="w-100 shadow-1-strong rounded mb-4"
-			  alt=""
-			/>
-		  </div>
-
-		  <div class="col-lg-4 mb-4 mb-lg-0">
-			<img
-			  src="../images/eventpage_images/community_engagement/ce_coffee_chat.png"
-			  class="w-100 shadow-1-strong rounded mb-4"
-			  alt=""
-			/>
-		  </div>
-		</div>
-	  </div>
-	</div>
-	</br>
-  </section>
-
-	<!-- Community Spotlight-->
-  <section id="comunity_spotlight">
-	<div class="container">
-		<center><p style="font-size: 30px;">2. Community Spotlight </p></center>
-
-	  <div class="row">
-		<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_1.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""
-		  />
-
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_2.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""
-		  />
-		</div>
-
-		<div class="col-lg-4 mb-4 mb-lg-0">
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_3.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""
-		  />
-
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_4.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""
-		  />
-		</div>
-
-		<div class="col-lg-4 mb-4 mb-lg-0">
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_5.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""
-		  />
-
-		  <img
-			src="../images/eventpage_images/community_spotlight/cs_6.png"
-			class="w-100 shadow-1-strong rounded mb-4"
-			alt=""/>
-		</div>
-	  </div>
-	</div>
-  </section>
-
-
-
-<!-- first year programming-->
-<br>
-<section id="first_year_programming">
-  <center><p style="font-size: 30px;">3. First Year Programming </p></center>
-	<div class="container">
-	  <div class="row">
-
-		<!-- the first programming element -->
-		<!-- margin: auto; allows the two figure elements to be spaced out equally across the row-->
-		<div class='col-lg-5 my-auto' style="text-align: center; margin: auto;">
-			  <figure style="align-self: center; margin: 5px;">
-				<img src="../images/eventpage_images/first_year_programming/fyp_student_experience_panel.png" style='width: 400px; height: 400px;"'>
-				<figcaption>Creating an environment that encourages a culture of allyship and support for one another.</figcaption>
-			  </figure>
-		</div>
-
-
-		<!-- the second programming element -->
-		<div class='col-lg-5 my-auto' style="text-align: center; margin: auto;">
-			  <figure>
-				<img src="../images/eventpage_images/first_year_programming/fyp_mentorship_program.png" style=' width: 400px; height: 400px;"'>
-				<figcaption>An interactive panel in which NYUAD students share advice and help incoming first year students understand the journey of a STEM major at NYUAD.</figcaption>
-			  </figure>
-		</div>
-
-	  </div>
-	</div>
-</section>
-
-
-  <!-- Highschool Conference-->
-<br>
-  <section id="outreach">
-	<div class="container">
-	  <center><p style="font-size: 30px;">4. Highschool Outreach </p></center>
-	  <div class="col-sm-12" >
-		  <p style="font-size:18px;">
-			<b> Highschool Conference </b>: The goal of the conference is to encourage high school girls in the UAE to pursue college studies and careers in Science, Technology, Engineering, and Mathematics. By interacting with girls with full potential, weSTEM hopes to assist them find their passion in STEM and build confidence as future scientists.</br>
-		  </p>
-
-		<center>
-		<p style="font-size: 30px;">
-		  <img src="../images/eventpage_images/highschool_conference.png"  style=" width: 100%;">
-		</p>
-		</center>
-
-	  </div>
-	</div>
-
-  </section>
-
-
-  <!-- Informative Workshops-->
-  <br>
-  <section id="informative_workshops">
-	<div class="container">
-		<center><p style="font-size: 30px;">5. Informative Workshops </p></center>
-
-	  <!-- the carousel start (code acquired and modified from botstrap examples) -->
-	  <div class="row">
-		<div class="col-sm-1" > </div>
-		<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-ride="carousel">
-		  <!-- Controls -->
-		  <div class="d-flex justify-content-center mb-4">
-			<button class="carousel-control-prev position-relative coloredButton" type="button" data-target="#carouselMultiItemExample" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Previous</span>
-			</button>
-
-			<button class="carousel-control-next position-relative coloredButton" type="button" data-target="#carouselMultiItemExample" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Next</span>
-			</button>
-		  </div>
-
-		<!-- Inner -->
-		<div class="carousel-inner py-4">
-		  <!-- Single item -->
-		  <div class="carousel-item active">
-			<div class="container">
-			  <div class="row">
-				<div class="col-lg-4">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_undergrad_research.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Undergraduate Research Panel</h5>
-					  <p class="card-text">
-						Partnering with the Office of Undergraduate Research, weSTEM members learnt about ways to join a research lab, reach out to professors or to lead their own research project and publish a paper in a journal.
-					  </p>
-					</div>
-				  </div>
-				</div>
-
-				<div class="col-lg-4 d-none d-lg-block">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_women_in_the_workplace.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Women in the Workplace</h5>
-					  <p class="card-text">
-						Collaboration with NYUAD Career Development Center and Women’s Leadership Network, this panel was discussion-based, moderated by three inspiring women from different industries.
-					  </p>
-					</div>
-				  </div>
-				</div>
-
-				<div class="col-lg-4 d-none d-lg-block">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_summer_research_programs.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Summer Research Programs</h5>
-					  <p class="card-text">
-						Students who participated in Undergraduate Summer Research Programs shared their experiences.
-					  </p>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-
-		  <!-- Single item -->
-		  <div class="carousel-item">
-			<div class="container">
-			  <div class="row">
-				<div class="col-lg-4 col-md-12">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_grace_hopper.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Grace Hopper Celebration Chat</h5>
-					  <p class="card-text">
-						Grace Hopper Celebration is the largest technical conference for women in Asia. WeSTEM community members who previously attended the program share tips for the scholarship application as well as interview, internship and CV tips.
-					  </p>
-					</div>
-				  </div>
-				</div>
-
-				<div class="col-lg-4 d-none d-lg-block">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_careers_in_psych_and_neuroscience.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Careers and Graduate Schools in Psychology and Neuroscience</h5>
-					  <p class="card-text">
-						In a collaboration with the student interest group NeuroAD and the Career Development Center, professors of Psychology and lab assistants gathered to share insights about the vision of psychology and neuroscience.
-					  </p>
-					</div>
-				  </div>
-				</div>
-
-				<div class="col-lg-4 d-none d-lg-block">
-				  <div class="card">
-					<img
-					  src="../images/eventpage_images/informative_workshops/iw_engineering_internships.png"
-					  class="card-img-top"
-					  alt="..."
-					/>
-					<div class="card-body">
-					  <h5 class="card-title">Engineering Internships</h5>
-					  <p class="card-text">
-						weSTEM collaborated with the Engineering Academic Committee as well as the Career Development Center to seek opportunities students can engage in when applying, and working as an engineering intern.
-					  </p>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		</div>
-	  </div>
-	</div>
-  </section>
-  <!-- the carousel end (code acquired and modified from botstrap examples) -->
-
-
-	<!-- #########page content end ############-->
+  <!--  -->
 
 	<!-- footer -->
 	<div class='footer'>
 		<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
 		<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
 		<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+		<!-- <p class="footer-text">weSTEM 2021 | by Nouf Alabbasi, Yeonie Heo, and Ivana Drabova</p> -->
 	</div>
 	<!-- end of footer -->
 
 </body>
 </html>
-
-
-
