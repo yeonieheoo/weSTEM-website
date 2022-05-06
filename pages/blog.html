@@ -7,8 +7,8 @@
 	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
 	<!-- email: mailto:westem.team@nyu.edu-->
 	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
-	<!-- pages: about(index.html) in main folder!!!, 
-		events (events.html) in the pages folder which should be the same folder as all the subpages, 
+	<!-- pages: about(index.html) in main folder!!!,
+		events (events.html) in the pages folder which should be the same folder as all the subpages,
 		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
 
 	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
@@ -34,17 +34,14 @@
 
 
 	<!-- bootstrap; cards from https://codes4education.com/how-to-use-responsive-card-in-bootstrap-4/ -->
-<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="style.css"> -->
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-	<style type="text/css">
-		/*you can use @import when you need to use 2 css stylesheets in one html document*/
-		@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
-	</style>
 
 </head>
 <body>
@@ -71,29 +68,33 @@
 					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
 					<a class='nav-link' href='../index.html'>About</a>
 				</li>
-				
+
 				<li class='nav-item'>
 					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
 					<a class='nav-link' href='events.html'>Events</a>
 				</li>
 
 				<li class='nav-item active'>
-					<a class='nav-link' href='blog.html'>Blog</a>
+					<a class='nav-link' href='blog_waiting.html'>Blog</a>
 				</li>
 
 				<li class='nav-item'>
 					<a class='nav-link' href='newsletter.html'>Newsletter</a>
 				</li>
 
-				<li class='nav-item'>
+<!-- 				<li class='nav-item'>
 					<a class='nav-link' href='resources.html'>Resources</a>
+				</li> -->
+
+				<li class='nav-item'>
+					<a class='nav-link' href='resources_waiting.html'>Resources</a>
 				</li>
-				
+
 				<li class='nav-item'>
 					<a class='nav-link' href='get_involved.html'>Get involved</a>
 				</li>
 
-			  </ul> 
+			  </ul>
 
 			<!-- the social media icons -->
 			<ul class='navbar-nav ml-auto'>
@@ -107,52 +108,9 @@
 	</nav>
 	<!-- end of navigation bar -->
 
-	<!-- weRead -->
-	<h1 class="heading" id="titleBlog">WeBLOG</h1>
-	<hr>
-	<div class="container">
-		<div class="row" id="blog_row">
 
-			<!-- blog 1 -->
-			<div class="col-md-4">
-				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
-					<div class="card-body">
-						<h5 class="card-title">Blog 1</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- blog 2 -->
-			<div class="col-md-4">
-				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
-					<div class="card-body">
-						<h5 class="card-title">Blog 2</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- blog 3 -->
-			<div class="col-md-4">
-				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
-					<div class="card-body">
-						<h5 class="card-title">Blog 3</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- weRead -->
-	<h1 class="heading"id="titleBlog">WeREAD</h1>
+	<!-- weRecommend -->
+	<h1 class="heading"id="titleBlog">weRECOMMEND</h1>
 	<hr>
 	<div class="container">
 		<div class="row" id="blog_row">
@@ -162,8 +120,8 @@
 				<div class="card box-shadow">
 					<img src="../images/blog_page/westem_conference.png" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">Westem’s 6th Annual High School Conference</h5>
-						<p class="card-text">Tatiana Houhou reports on WeStem's 2022 conference for High School Girls in the UAE.</p>
+						<h5 class="card-title">weSTEM’s 6th Annual High School Conference</h5>
+						<p class="card-text">Tatiana Houhou reports on weSTEM's 2022 conference for High School Girls in the UAE.</p>
 						<a href="https://www.thegazelle.org/issue/225/news/westem-sixth-hsc" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -172,9 +130,9 @@
 			<!-- article 2 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/westem_empowering.jpg" class="card-img-top" alt="..."  id="blogImgs">  
+					<img src="../images/blog_page/westem_empowering.jpg" class="card-img-top" alt="..."  id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">Westem Empowering Women on Campus, Beyond</h5>
+						<h5 class="card-title">weSTEM Empowering Women on Campus, Beyond</h5>
 						<p class="card-text">Mashal-Memon introduces our group to the NYU Abu Dhabi community in 2016.</p>
 						<a href="https://www.thegazelle.org/issue/83/features/westem" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
@@ -187,7 +145,7 @@
 					<img src="../images/blog_page/simran_article.gif" class="card-img-top" alt="..."  id="blogImgs">
 					<div class="card-body">
 						<h5 class="card-title">To My Fellow Gender-marginalized Peers In Stem: You Are A Force To Be Reckoned With</h5>
-						<p class="card-text">Simran Parwani, WeStem president for 2020, uses data visualization to tell stories of toxic learning culture in STEM at NYU Abu Dhabi.</p>
+						<p class="card-text">Simran Parwani, weSTEM president for 2020, uses data visualization to tell stories of toxic learning culture in STEM at NYU Abu Dhabi.</p>
 						<a href="https://www.thegazelle.org/issue/204/features/gender-marginalized-stem-force-reckoned" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -228,18 +186,17 @@
 					<img src="../images/blog_page/embracing.png" class="card-img-top" alt="..."  id="blogImgs">
 					<div class="card-body">
 						<h5 class="card-title">Embracing Complexities: My Journey as a Woman in STEM</h5>
-						<p class="card-text">Gopika Krishnan, WeStem president for 2022,  reflects on her journey at NYU Abu Dhabi.</p>
+						<p class="card-text">Gopika Krishnan, weSTEM president for 2022,  reflects on her journey at NYU Abu Dhabi.</p>
 						<a href="https://www.thegazelle.org/issue/220/opinion/women-in-stem" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
-
-	<!-- weRECOMMEND -->
-	<h1 class="heading" id="titleBlog">WeRECOMMEND</h1>
+	<!-- weRead -->
+	<h1 class="heading" id="titleBlog">weREAD</h1>
 	<hr>
 	<div class="container">
 		<div class="row" id="blog_row">
@@ -247,10 +204,10 @@
 			<!-- blog 1 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<img src="../images/blog_page/invisible_women.jpg" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">rec 1</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<h5 class="card-title">Invisible Women by Caroline Criado Perez</h5>
+						<p class="card-text">Exposing world designed for men.</p>
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -259,10 +216,10 @@
 			<!-- blog 2 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<img src="../images/blog_page/data_feminism.jpg" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">rec 2</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<h5 class="card-title">Data Feminism by Catherine D'Ignazio and Lauren F. Klein</h5>
+						<p class="card-text">Data is power. But power for who?</p>
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -270,6 +227,50 @@
 
 			<!-- blog 3 -->
 			<div class="col-md-4">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/race_after_technology.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Race After Technology by Ruha Benjamin </h5>
+						<p class="card-text">Emerging technologies reinforcing White supremacy and social inequity.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- weWATCH -->
+	<h1 class="heading" id="titleBlog">weWATCH</h1>
+	<hr>
+	<div class="container">
+		<div class="row" id="blog_row">
+
+			<!-- blog 1 -->
+			<div class="col-md-6">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/picture_a_scientist.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Picture a Scientist</h5>
+						<p class="card-text">Women in STEM share their experiences ranging from brutal harassment to years of subtle slights.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 2 -->
+			<div class="col-md-6">
+				<div class="card box-shadow">
+					<img src="../images/blog_page/hidden_figures.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<div class="card-body">
+						<h5 class="card-title">Hidden Figures</h5>
+						<p class="card-text">Brilliant women in STEM save the U.S. space program. Based on a true story.</p>
+						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog 3 -->
+			<!-- <div class="col-md-4">
 				<div class="card box-shadow">
 					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
@@ -278,12 +279,12 @@
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
-	<!-- weRECOMMEND -->
-	<h1 class="heading" id="titleBlog">WeLISTEN</h1>
+	<!-- weLISTEN -->
+	<h1 class="heading" id="titleBlog">weLISTEN</h1>
 	<hr>
 	<div class="container">
 		<div class="row" id="blog_row">
@@ -291,10 +292,10 @@
 			<!-- blog 1 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<img src="../images/blog_page/science_vs.webp" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">lis 1</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<h5 class="card-title">Science Vs</h5>
+						<p class="card-text">Science versus news from your feed.</p>
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -303,10 +304,10 @@
 			<!-- blog 2 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<img src="../images/blog_page/code_switch.webp" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">lis 2</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<h5 class="card-title">Code Switch</h5>
+						<p class="card-text">Fearless conversations about race.</p>
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
@@ -315,10 +316,10 @@
 			<!-- blog 3 -->
 			<div class="col-md-4">
 				<div class="card box-shadow">
-					<img src="../images/blog_page/temp.jpg" class="card-img-top" alt="..." id="blogImgs">
+					<img src="../images/blog_page/steminist.webp" class="card-img-top" alt="..." id="blogImgs">
 					<div class="card-body">
-						<h5 class="card-title">lis 3</h5>
-						<p class="card-text">description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<h5 class="card-title">The Steminist</h5>
+						<p class="card-text">weSTEM's very own 4 episode podcast series.</p>
 						<a href="#" target="_blank" class="btn btn-secondary">Read</a>
 					</div>
 				</div>
