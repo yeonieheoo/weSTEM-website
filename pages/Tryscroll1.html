@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Events</title>
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!,
+		events (events.html) in the pages folder which should be the same folder as all the subpages,
+		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
+
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<!-- bootstrap links for the scroll navbar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script> -->
+	<!-- the icon in the tab -->
+	<link rel="icon" href="../images/logos/westem-logo-black.png">
+	
+	<!-- linked needed from the social media icons -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- used to import needed files to change the default font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
+
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+	<style type="text/css">
+		body {
+		  position: relative;
+		}
+		#community_engagement {padding-top:50px;display: inline-block;color: #fff; background-color: #1E88E5;}
+		#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+		#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+		#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+		#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+		ul.nav-pills {
+			top: 20px;
+			position: fixed;
+		}
+		div.col-sm-9 div {
+			height: 250px;
+			font-size: 28px;
+		}
+		@media screen and (max-width: 810px) {
+			#section1, #section2, #section3, #section41, #section42  {
+			margin-left: 150px;
+			}
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
+		</a>
+
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<span class='navbar-toggler-icon'></span>
+		</button>
+
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
+
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../index.html'>About</a>
+				</li>
+				
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+					<a class='nav-link' href='events.html'>Events</a>
+				</li>
+
+				<li class='nav-item active'>
+					<a class='nav-link' href='blog.html'>Blog</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='newsletter.html'>Newsletter</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='resources.html'>Resources</a>
+				</li>
+				
+				<li class='nav-item'>
+					<a class='nav-link' href='get_involved.html'>Get involved</a>
+				</li>
+
+			  </ul> 
+
+			<!-- the social media icons -->
+			<ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+			</ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+
+
+
+	<!-- the scrolling code was taken from https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp -->
+
+	<!-- the nav bar -->
+	<div class="container">
+		<div class="row">
+			<nav class="col-sm-3" id="myScrollspy">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#community_engagement">community_engagement</a></li>
+				<li><a href="#section2">Section 2</a></li>
+				<li><a href="#section3">Section 3</a></li>
+			</ul>
+		</nav>
+
+
+		<!-- the content to be scrolled though -->
+		<div class="col-sm-9">
+			<section id="community_engagement" class="text-center" >
+				<div class="container text-center" style=" width: 100%; word-wrap: break-word;">
+				<center><p style="font-size: 30px;">1. Community Engagement </p></center>
+				
+				<div class="row">
+					<!-- community engagement: picture a scientist film screening-->
+					<p style="font-size:18px;">
+						<b> Picture a Scientist Film Screening </b>: weSTEM organized a virtual screening of the movie ‘Picture a Scientist’ about three accomplished researchers who talk about their journey in science and their experiences with harassment and microaggressions in the workplace.   </br>
+					</p>
+
+					<!--embeding the video-->
+					<div class="embed-responsive embed-responsive-16by9" style="margin-top: 10px; margin-bottom: 10px;">
+						<iframe src="https://www.youtube.com/embed/rUYxkB8th2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+					<!-- community engagement: productivity hour-->
+					</br>
+					<right><p style="font-size:18px;">
+						<b> Group Study </b>: “Productivity Hour” study session was held with virtual breakout rooms of 2-3 people to work on our respective assignments. </br>
+					</p></right>
+
+
+					<!-- community engagement: course advising sessions-->
+					<right><p style="font-size:18px;">
+						<b> Course Advising Sessions </b>: Insights and tips from friends on campus could make our whole semester much easier. All STEM majors were invited to this event to give and get help. </br>
+					</p></right>
+					</br>
+
+
+					<!-- community engagement: coffee chat-->
+					<right><p style="font-size:18px;">
+						<b> Coffee Chat </b>: Stressed about school? WeSTEM Coffee Chat has always been the best place to vent and make new friends along the way. Our team pairs people from the community to meet over coffee. </br>
+					</p></right>
+				</div>
+
+				<!-- organizing the three images using a bootstrap-->
+				<div class="row">
+
+					<div class="col-sm-1" > </div>
+					<div class="row">
+						<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+							<img
+								src="../images/eventpage_images/community_engagement/ce_group_study.png"
+								class="w-100 shadow-1-strong rounded mb-4"
+								alt=""
+							/>
+						</div>
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<img
+								src="../images/eventpage_images/community_engagement/ce_course_advising_sessions.png"
+								class="w-100 shadow-1-strong rounded mb-4"
+								alt=""
+							/>
+						</div>
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<img
+							  src="../images/eventpage_images/community_engagement/ce_coffee_chat.png"
+							  class="w-100 shadow-1-strong rounded mb-4"
+							  alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</br>
+		</section>
+
+		<div id="section2"> 
+			<h1>Section 2</h1>
+			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+			</div>        
+		<div id="section3">         
+			<h1>Section 3</h1>
+			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+		</div>
+		  <div id="section41">         
+			<h1>Section 4-1</h1>
+			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+		  </div>      
+		  <div id="section42">         
+			<h1>Section 4-2</h1>
+			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+</body>
+</html>
