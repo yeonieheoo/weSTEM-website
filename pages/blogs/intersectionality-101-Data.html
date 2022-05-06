@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Blog 1</title>
+	<!-- this is a template for SUBpages -->
+	<!-- dependencies: stylesheet in the main folder -->
+	<!-- instagram: https://www.instagram.com/westemnyuad/ -->
+	<!-- email: mailto:westem.team@nyu.edu-->
+	<!-- slack: https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform -->
+	<!-- pages: about(index.html) in main folder!!!, 
+		events (events.html) in the pages folder which should be the same folder as all the subpages, 
+		get involved (get_involved.html) in the pages folder which should be the same folder as all the subpages -->
+
+	<!-- bootstrap stuff, learn more about this here here:https://www.w3schools.com/bootstrap/-->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+	<!-- the icon in the tab -->
+	<link rel="icon" href="../../images/logos/westem-logo-black.png">
+
+	<!-- linked needed from the social media icons -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- used to import needed files to change the default font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,800' rel='stylesheet'>
+
+	<!-- link to our stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+
+</head>
+<body>
+	<!-- nav bar -->
+	<nav class='navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark'> <!-- replace dark with light to get  -->
+
+		<a class='navbar-brand' href='#'>
+			<!-- adding weStem logo -->
+			<a class='navbar-brand' href='../index.html'><img src='../../images/logos/westem-logo-white.png' class='img-responsive logo'>
+			</a>
+		</a>
+
+		<!--dropdown button that appears for smaller screens such as phone -->
+		<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+		<span class='navbar-toggler-icon'></span>
+		</button>
+
+		<!-- nav bar contents aka links to other pages and social media icons -->
+		<div class='collapse navbar-collapse' id='navbarNavDropdown'>
+			<ul class='navbar-nav'>
+
+				<!-- #TODO activate the page that is current (make sure to change class='nav-link active' for respective pages e.g. the events.html should have the class of its page here activated-->
+				<li class='nav-item'>
+					<!-- since this is templete for subpages we need to gou out of pages folder into main foler (hence the two dots, then go to index in the main folder) -->
+					<a class='nav-link' href='../../index.html'>About</a>
+				</li>
+				<li class='nav-item'>
+					<!-- the rest of the pages is in the same folder (ie pages) so we can just directly name the file name -->
+					<a class='nav-link' href='../events.html'>Events</a>
+				</li>
+
+				<li class='nav-item active'>
+					<a class='nav-link' href='../blog.html'>Blog</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='../newsletter.html'>Newsletter</a>
+				</li>
+				
+				<li class='nav-item'>
+					<a class='nav-link' href='../resources.html'>Resources</a>
+				</li>
+
+				<li class='nav-item'>
+					<a class='nav-link' href='../get_involved.html'>Get involved</a>
+				</li>
+			</ul> 
+
+			<!-- the social media icons -->
+			<ul class='navbar-nav ml-auto'>
+				<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+				<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+				<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+			</ul>
+			<!-- end of the social media icons -->
+
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+
+	<main role="main" class="container" id="TOP-BOTTOM-MARGIN">
+		  <div class="row">
+			<div class="col-md-12 blog-main">
+				<h3 class="pb-3 mb-4 font-italic border-bottom">
+					From weSTEM
+				</h3>
+
+				<div class="blog-post">
+					<h2 class="blog-post-title">Intersectionality 101: What the Numbers Don’t Tell us About the Experiences of Women in STEM</h2>
+					<p class="blog-post-meta">May 6, 2022 | by <i>Shayma Alshehhi</i>, edited by <i>Ivana Drabova</i></p>
+
+					<p>Because women have been historically marginalized in STEM fields (Science, Technology, Engineering, and Mathematics), it became essential to collect data about their representation. However, it is equally important to understand what such data may not tell us. Consider the following diversity report graph from one of the tech industry giants, Google: </p>
+					<img src="https://i2.cdn.turner.com/money/dam/assets/140529102948-chart-google-gender-1024x576.png">
+					<p>The above graph reported by <a href="https://money.cnn.com/2014/05/29/technology/google-women/"> CNN </a> shows the percentage of women compared to the percentage of men working at Google. Not only is the graph rooted in the gender binary, but it also reduces men and women into monolithic blocks on the basis of gender. However, gender is only one of the many intertwined identities women may hold. Graphs such as the ones above may be illusive. It is possible, for example, that women of color do not make up even a single percentage of the pie chart. Hence, graphs such as the one above are insufficient for understanding diversity. </p>
+					<p>An increasing number of scholars acknowledge how people’s experiences are molded by the multitude of their identities and have come to adopt the intersectionality framework. Intersectionality, defined by Kimberle Crenshaw in <a href="https://www.jstor.org/stable/1229039?seq=1">1991</a>, is a lens through which one can consider the complexity of human identities and experiences. Intersectionality is used to analyze the co-construction and connections of different aspects of identity, such as gender, race, sexuality, and class, among others. For example, an Arab Muslim woman who works in an engineering company does not experience her job separately as Arab, Muslim, or a woman but rather as the interaction of all three identities. There may not be a proper space allocated for her to pray comfortably <i>and</i> she may be forced to regularly debunk orientalist myths about her country of origin <i>and</i> answer questions about her attire choices on daily bases <i>and</i> feel unwelcomed in “boy’s clubs” developed for career networking.</p>
+					<p>This example shows how one-dimensional quantitative analyses fail to grasp the scope and complexity needed for genuine advance in diversity. The intersectionality approach, on the other hand, demands statistics beyond the single dimension and allows us to imagine real women with complex intertwined identities. Hence, intersectionality shifts the focus of diversity debates away from the gender binary and toward complex challenges women navigate in STEM and elsewhere. So when we take a moment to consider the ratio of male to female students in a STEM classroom, note that it is not enough. Adopting an intersectional mindset in an academic or professional setting by analyzing individuals and hearing their stories to view their complex identities in all their many facets of reality is crucial for moving forward in making STEM genuinely diverse and inclusive.</p>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<!-- footer -->
+	<div class='footer'>
+		<a href='https://www.instagram.com/westemnyuad/' class='fa fa-instagram'></a>
+		<a href='mailto:westem.team@nyu.edu' class='fa fa-envelope'></a>
+		<a href='https://docs.google.com/forms/d/e/1FAIpQLScE-LxnVmYpPy_MfN4Y2G0RHxUU6sdHsRg4ZKxxz2x53f3nyQ/viewform' class='fa fa-slack'></a>
+		<!-- <p class="footer-text">weSTEM 2021 | by Nouf Alabbasi, Yeonie Heo, and Ivana Drabova</p> -->
+	</div>
+	<!-- end of footer -->
+
+</body>
+</html>
