@@ -467,14 +467,14 @@ body{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-/* 
+
 .btn-secondary{
-/*	position: relative;
+	position: relative;
 	bottom: 0;
-/*	right: 0;
-	margin: 5px*/;
+	right: 0;
+	margin: 5px;
 	float: right;
-} */
+}
 
 #titleBlog{
 	text-align: center;
