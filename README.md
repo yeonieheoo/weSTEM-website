@@ -10,7 +10,3 @@ As of 2022 summer, Yeonie is leading the weSTEM website as the Web Chief.
 * Blog, *pages/blog.html*
 * Newsletter, *pages/newsletter.html*
 * Resources, *pages/resources.html*
-
-## Learn HTML
-HTML is the languge the browser uses. Start learning HTML here
-https://www.w3schools.com/html/default.asp 
